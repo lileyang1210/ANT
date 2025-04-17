@@ -1,4 +1,4 @@
-## Set You Straight: Auto-Steering Denoising Trajectories to Sidestep Unwanted Concepts
+# Set You Straight: Auto-Steering Denoising Trajectories to Sidestep Unwanted Concepts
 
 **Leyang Li, Shilin Lu, Yan Ren, Adams Wai-Kin Kong**
 
