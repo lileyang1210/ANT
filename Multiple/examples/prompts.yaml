@@ -1,0 +1,6 @@
+- unconditional: "" # word to take the difference from the positive concept
+  neutral: "" # starting point for conditioning the target
+  guidance_scale: 1.0
+  resolution: 512
+  dynamic_resolution: false
+  batch_size: 2

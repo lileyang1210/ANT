@@ -1,0 +1,241 @@
+ANT:
+  lora_path: 'your_lora_path'
+  # >>> primary settings >>>
+  multi_concept:
+  - [
+    ['adam-driver', 'object'],
+    ['adriana-lima', 'object'],
+    ['amber-heard', 'object'],
+    ['amy-adams', 'object'],
+    ['andrew-garfield', 'object'],
+    ['angelina-jolie', 'object'],
+    ['anjelica-huston', 'object'],
+    ['anna-faris', 'object'],
+    ['anna-kendrick', 'object'],
+    ['anne-hathaway', 'object'],
+    ['arnold-schwarzenegger', 'object'],
+    ['barack-obama', 'object'],
+    ['beth-behrs', 'object'],
+    ['bill-clinton', 'object'],
+    ['bob-dylan', 'object'],
+    ['bob-marley', 'object'],
+    ['bradley-cooper', 'object'],
+    ['bruce-willis', 'object'],
+    ['bryan-cranston', 'object'],
+    ['cameron-diaz', 'object'],
+    ['channing-tatum', 'object'],
+    ['charlie-sheen', 'object'],
+    ['charlize-theron', 'object'],
+    ['chris-evans', 'object'],
+    ['chris-hemsworth', 'object'],
+    ['chris-pine', 'object'],
+    ['chuck-norris', 'object'],
+    ['courteney-cox', 'object'],
+    ['demi-lovato', 'object'],
+    ['drake', 'object'],
+    ['drew-barrymore', 'object'],
+    ['dwayne-johnson', 'object'],
+    ['ed-sheeran', 'object'],
+    ['elon-musk', 'object'],
+    ['elvis-presley', 'object'],
+    ['emma-stone', 'object'],
+    ['frida-kahlo', 'object'],
+    ['george-clooney', 'object'],
+    ['glenn-close', 'object'],
+    ['gwyneth-paltrow', 'object'],
+    ['harrison-ford', 'object'],
+    ['hillary-clinton', 'object'],
+    ['hugh-jackman', 'object'],
+    ['idris-elba', 'object'],
+    ['jake-gyllenhaal', 'object'],
+    ['james-franco', 'object'],
+    ['jared-leto', 'object'],
+    ['jason-momoa', 'object'],
+    ['jennifer-aniston', 'object'],
+    ['jennifer-lawrence', 'object'],
+    ['jennifer-lopez', 'object'],
+    ['jeremy-renner', 'object'],
+    ['jessica-biel', 'object'],
+    ['jessica-chastain', 'object'],
+    ['john-oliver', 'object'],
+    ['john-wayne', 'object'],
+    ['johnny-depp', 'object'],
+    ['julianne-hough', 'object'],
+    ['justin-timberlake', 'object'],
+    ['kate-bosworth', 'object'],
+    ['kate-winslet', 'object'],
+    ['leonardo-dicaprio', 'object'],
+    ['margot-robbie', 'object'],
+    ['mariah-carey', 'object'],
+    ['meryl-streep', 'object'],
+    ['mick-jagger', 'object'],
+    ['mila-kunis', 'object'],
+    ['milla-jovovich', 'object'],
+    ['morgan-freeman', 'object'],
+    ['nick-jonas', 'object'],
+    ['nicolas-cage', 'object'],
+    ['nicole-kidman', 'object'],
+    ['octavia-spencer', 'object'],
+    ['olivia-wilde', 'object'],
+    ['oprah-winfrey', 'object'],
+    ['paul-mccartney', 'object'],
+    ['paul-walker', 'object'],
+    ['peter-dinklage', 'object'],
+    ['philip-seymour-hoffman', 'object'],
+    ['reese-witherspoon', 'object'],
+    ['richard-gere', 'object'],
+    ['ricky-gervais', 'object'],
+    ['rihanna', 'object'],
+    ['robin-williams', 'object'],
+    ['ronald-reagan', 'object'],
+    ['ryan-gosling', 'object'],
+    ['ryan-reynolds', 'object'],
+    ['shia-labeouf', 'object'],
+    ['shirley-temple', 'object'],
+    ['spike-lee', 'object'],
+    ['stan-lee', 'object'],
+    ['theresa-may', 'object'],
+    ['tom-cruise', 'object'],
+    ['tom-hanks', 'object'],
+    ['tom-hardy', 'object'],
+    ['tom-hiddleston', 'object'],
+    ['whoopi-goldberg', 'object'],
+    ['zac-efron', 'object'],
+    ['zayn-malik', 'object'],
+    ['melania-trump', 'object'],
+  ]
+  use_pooler: true  
+  train_batch_size: 1
+  learning_rate: 1.0e-04
+  max_train_steps: 50
+  train_preserve_scale: 2.0e-12
+  fuse_preserve_scale: 2.0e-12
+  mapping_concept: 
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+    - 'a person'
+  augment: true
+  lamb: 0.0
+  rank: 1
+  lora: true
+  train_seperate: true
+  importance_sampling: true
+  max_memory: 50
+  aug_length: 30
+  prompt_len: 30
+  resolution: 512
+  all_words: false
+  generate_data: true
+  center_crop: false
+  use_gpt: false
+  test_erased_model: false
+  prior_preservation_cache_path: ./cache/cache_coco.pt
+  domain_preservation_cache_path: ./cache/cache_cele.pt
+  preserve_weight: 1.0e+13
+  input_data_dir: ./data/100cele
+
+  # <<< primary settings <<<
+  
+  pretrained_model_name_or_path: CompVis/stable-diffusion-v1-4
+  with_prior_preservation: false
+  preserve_prompt: a person
+  preserve_data_dir: data/a person
+  prior_loss_weight: 1.0
+  

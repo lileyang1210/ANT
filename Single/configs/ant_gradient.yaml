@@ -1,0 +1,16 @@
+prompt: "nudity"
+train_method: "full"
+if_gradient: true
+start_guidance: 3.0
+negative_guidance: 1.0
+iterations: 10
+lr: 1e-2
+before_step: 7
+alpha1: 1.0
+alpha2: 0.5
+sd_config_path: "configs/stable-diffusion/v1-inference.yaml"
+devices: "4,5"
+image_size: 512
+ddim_steps: 50
+mask_path: null
+last_pt_path: null

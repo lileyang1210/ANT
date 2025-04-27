@@ -1,0 +1,30 @@
+prompts_file: "./examples/prompts.yaml"
+
+pretrained_model:
+  name_or_path: "CompVis/stable-diffusion-v1-4" # you can also use .ckpt or .safetensors models
+  v2: false # true if model is v2.x
+  v_pred: false # true if model uses v-prediction
+
+network:
+  type: "c3lier" #"lierla" or "c3lier"
+  rank: 64
+  alpha: 1.0
+  training_method: "full" # selfattn, xattn, noxattn, or innoxattn
+
+train:
+  device: "cuda:0"
+  precision: "bfloat16"
+  noise_scheduler: "ddim" # or "ddpm", "lms", "euler_a"
+  iterations: 10
+  before_step: 4
+  alpha_1: 2.5
+  alpha_2: 0.5
+  lr: 5e-4
+  optimizer: "AdamW"
+  lr_scheduler: "constant" # constant step
+  max_denoising_steps: 50
+
+save:
+  path: "./output/test"
+  precision: "bfloat16"
+
