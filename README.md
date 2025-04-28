@@ -46,8 +46,6 @@ cd Single
 
 Download the SD1.4 weighs from [here](https://huggingface.co/Haerin1/ANT/blob/main/sd-v1-4-full-ema.ckpt) and move it to `./models/ldm`.
 
-Make sure you have at least 48GB of VRAM on a single GPU, or at least 24GB on each of two GPUs.
-
 ```bash
 python train-scripts/train_ant_single.py --config configs/ant_gradient.yaml #you can modify parameters in yaml file
 ```
