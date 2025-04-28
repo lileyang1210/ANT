@@ -15,7 +15,7 @@ Ensuring the ethical deployment of text-to-image models requires effective techn
 
 </div>
 
-![teaser](assets/teaser.png)
+![teaser](teaser.png)
 
 ---
 
