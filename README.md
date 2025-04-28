@@ -44,19 +44,19 @@ export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64
 cd Single
 ```
 
-Download the SD1.4 weighs from [here](https://huggingface.co/Haerin1/ANT/blob/main/sd-v1-4-full-ema.ckpt) and move it to `./models/ldm`.
+Download the SD1.4 weights from [here](https://huggingface.co/Haerin1/ANT/blob/main/sd-v1-4-full-ema.ckpt) and move it to `./models/ldm`.
 
 ```bash
 python train-scripts/train_ant_single.py --config configs/ant_gradient.yaml #you can modify parameters in yaml file
 ```
 
-After this, you can get a folder containing gradient maps under `./gradient`. Use the following command to generate the saliency map by replacing 'prompt_name' with the name gotten from last step (not the path).
+After this, you can get a folder containing gradient maps under `./gradient`. Use the following command to generate the saliency map by replacing 'prompt_name' with the name gotten from the last step (not the path).
 
 ```bash
 python train-scripts/generate_mask.py --prompt_name 'replace_this'
 ```
 
-At last, you can use the saliency map to train your model which will be stored in `./models`. Don't forget to modify `mask_path` in yaml file.
+At last, you can use the saliency map to train your model, which will be stored in `./models`. Don't forget to modify `mask_path` in yaml file.
 
 ```
 python train-scripts/train_ant_single.py --config configs/ant_train.yaml
@@ -68,14 +68,14 @@ python train-scripts/train_ant_single.py --config configs/ant_train.yaml
 cd Multiple
 ```
 
-Download pre-cached prior knowledge from [here](https://huggingface.co/Haerin1/ANT/tree/main/cache) and move it to ./cache. Then you can run the script to generate LoRA matric for each single concept.
+Download pre-cached prior knowledge from [here](https://huggingface.co/Haerin1/ANT/tree/main/cache) and move it to ./cache. Then you can run the script to train a LoRA for each concept.
 
 ```
 pip install diffusers==0.20.0
 python train_ant.py --config_file "examples/config.yaml" --erase_type "celebrity"
 ```
 
-At last, you can fuse the LoRA and get the final model.
+Finally, you can fuse the LoRA to get the final model.
 
 ```
 pip install diffusers==0.22.0
@@ -86,9 +86,9 @@ python fuse_lora_ant.py "examples/erase_cele_100.yaml"
 
 ## Evaluate
 
-Refer to [this page](https://github.com/Shilin-LU/MACE?tab=readme-ov-file#metrics-evaluation) for nudity, celebrity and art style evaluation.
+Refer to [this page](https://github.com/Shilin-LU/MACE?tab=readme-ov-file#metrics-evaluation) for nudity, celebrity, and art style evaluation.
 
-We have uploaded our fine-tuned models to huggingface. If you just want to evaluate the model and do not want to train from the start, you can download these models.
+We have uploaded our fine-tuned models to HuggingFace. You can download these models if you want to evaluate the model and do not want to train from the start.
 
 | Erasure Type | Fine-tuned Models                                            |
 | ------------ | ------------------------------------------------------------ |
