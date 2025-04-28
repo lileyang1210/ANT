@@ -1,8 +1,23 @@
 # Set You Straight: Auto-Steering Denoising Trajectories to Sidestep Unwanted Concepts
 
-**Leyang Li, Shilin Lu, Yan Ren, Adams Wai-Kin Kong**
+[![arXiv](https://img.shields.io/badge/arXiv-ANT-green.svg?style=plastic)](https://arxiv.org/abs/2504.12782) [![HuggingFace](https://img.shields.io/badge/HuggingFace-Model-blue.svg?style=plastic)](https://huggingface.co/Haerin1/ANT/tree/main)
 
-------
+Official implementation of [Set You Straight: Auto-Steering Denoising Trajectories to Sidestep Unwanted Concepts](https://arxiv.org/abs/2504.12782).
+
+> **Set You Straight: Auto-Steering Denoising Trajectories to Sidestep Unwanted Concepts**<br>
+> Leyang Li*, Shilin Lu*, Yan Ren, Adams Wai-Kin Kong <be>
+> (* Equal Contribution)
+> 
+>**Abstract**: <br>
+Ensuring the ethical deployment of text-to-image models requires effective techniques to prevent the generation of harmful or inappropriate content. While concept erasure methods offer a promising solution, existing finetuning-based approaches suffer from notable limitations. Anchor-free methods risk disrupting sampling trajectories, leading to visual artifacts, while anchor-based methods rely on the heuristic selection of anchor concepts. To overcome these shortcomings, we introduce a finetuning framework, dubbed ANT, which Automatically guides deNoising Trajectories to avoid unwanted concepts. ANT is built on a key insight: reversing the condition direction of classifier-free guidance during mid-to-late denoising stages enables precise content modification without sacrificing early-stage structural integrity. This inspires a trajectory-aware objective that preserves the integrity of the early-stage score function field, which steers samples toward the natural image manifold, without relying on heuristic anchor concept selection. For single-concept erasure, we propose an augmentation-enhanced weight saliency map to precisely identify the critical parameters that most significantly contribute to the unwanted concept, enabling more thorough and efficient erasure. For multi-concept erasure, our objective function offers a versatile plug-and-play solution that significantly boosts performance. Extensive experiments demonstrate that ANT achieves state-of-the-art results in both single and multi-concept erasure, delivering high-quality, safe outputs without compromising the generative fidelity.
+
+---
+
+</div>
+
+![teaser](assets/teaser.png)
+
+---
 
 ## Setup
 
@@ -88,3 +103,23 @@ We have uploaded our fine-tuned models to huggingface. If you just want to evalu
 ## Acknowledgments
 
 Thanks for the following projects that our code is based on: [ESD](https://github.com/rohitgandikota/erasing), [LECO](https://github.com/p1atdev/LECO), [MACE](https://github.com/Shilin-LU/MACE).
+
+
+## Citation
+If you find this project helpful for your research, please consider citing the following BibTeX entry.
+```
+@article{li2025set,
+  title={Set You Straight: Auto-Steering Denoising Trajectories to Sidestep Unwanted Concepts},
+  author={Li, Leyang and Lu, Shilin and Ren, Yan and Kong, Adams Wai-Kin},
+  journal={arXiv preprint arXiv:2504.12782},
+  year={2025}
+}
+
+@inproceedings{lu2024mace,
+  title={Mace: Mass concept erasure in diffusion models},
+  author={Lu, Shilin and Wang, Zilan and Li, Leyang and Liu, Yanzhu and Kong, Adams Wai-Kin},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={6430--6440},
+  year={2024}
+}
+```
