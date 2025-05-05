@@ -82,6 +82,21 @@ pip install diffusers==0.22.0
 python fuse_lora_ant.py "examples/erase_cele_100.yaml"
 ```
 
+## Generate images
+
+### Single Concept
+
+```
+cd Single/sample-scripts
+python sample.py --model_path 'your_model_path' --csv_path 'csv_file'
+```
+
+### Multiple Concepts
+
+```
+cd Multiple/sample-scripts
+python sample.py --model_path 'your_model_path' --csv_path 'csv_file'
+```
 
 
 ## Evaluate
