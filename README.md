@@ -1,4 +1,4 @@
-# Set You Straight: Auto-Steering Denoising Trajectories to Sidestep Unwanted Concepts
+# [ACMMM 2025] Set You Straight: Auto-Steering Denoising Trajectories to Sidestep Unwanted Concepts
 
 [![arXiv](https://img.shields.io/badge/arXiv-ANT-green.svg?style=plastic)](https://arxiv.org/abs/2504.12782) [![HuggingFace](https://img.shields.io/badge/HuggingFace-Model-blue.svg?style=plastic)](https://huggingface.co/Haerin1/ANT/tree/main)
 
